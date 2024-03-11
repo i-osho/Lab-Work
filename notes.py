@@ -154,31 +154,78 @@ import time
 #     if i == 50:
 #         continue
 #     print(i, end=" ")
-import numpy as np
-List = (list(range(1, 11)))
-List
-List.append(11)
-List.insert(0, 0)
-List.remove(5)
-List.pop(3)
-List.clear()
-List.extend([11, 12, 13])
-List.index(11)
-List.count(11)
-List.sort()
-List.reverse()
-List.copy()
-List2 = np.array(List)
-List2.min()
-List2.max()
-List2.mean()
-List
-List2
 
-array2d = np.array([[1,2,3],[4,5,6],[7,8,9]])
-array2d.resize(9,1)
-array2d.T
-array2d
 
-Tuple = (1,)
-type(Tuple)
+
+###   11/03/2024   ###
+
+# import numpy as np
+# List = (list(range(1, 11)))
+# List
+# List.append(11)
+# List.insert(0, 0)
+# List.remove(5)
+# List.pop(3)
+# List.clear()
+# List.extend([11, 12, 13])
+# List.index(11)
+# List.count(11)
+# List.sort()
+# List.reverse()
+# List.copy()
+# List2 = np.array(List)
+# List2.min()
+# List2.max()
+# List2.mean()
+# List
+# List2
+
+# array2d = np.array([[1,2,3],[4,5,6],[7,8,9]])
+# array2d.resize(9,1)
+# array2d.T
+# array2d
+
+# Tuple = (1,2,3,4,5,6,7,8,9,10)
+# type(Tuple)
+# len(Tuple)
+# min(Tuple)
+# max(Tuple)
+# sum(Tuple)
+# Tuple.index(5)
+# Tuple.count(3)
+# Tuple[1:5]
+# Tuple[::2]
+# Tuple[::-1]
+# t = sorted(Tuple)
+# t
+# type(t)
+# Tlist = list(Tuple)
+# Tlist.append(11)
+# Tlist.insert(0, 0)
+# Tlist.remove(5)
+# Tlist.pop(3)
+# Tlist.extend([11, 12, 13])
+# Tlist.clear()
+# Tuple = tuple(Tlist)
+# Tuple
+# Tlist
+
+choice = int(input("Enter number from 1 to 5:"))
+match choice:
+    case 1:
+        print(f"you have selected 1")
+    case 2:
+        print(f"you have selected 2")
+    case 3:
+        print(f"you have selected 3")
+    case 4:
+        print(f"you have selected 4")
+    case 5:
+        print(f"you have selected 5")
+    case _:
+        print("You didnt select any number from 1 to 5")
+
+# WAP to find the factorial of a given number
+num = int(input("Enter a number: ")); fact = 1
+for i in range(1, num+1):   fact = fact*i
+print(f"The factorial of {num} is {fact}")
