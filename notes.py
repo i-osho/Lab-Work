@@ -210,22 +210,42 @@ import time
 # Tuple
 # Tlist
 
-choice = int(input("Enter number from 1 to 5:"))
-match choice:
-    case 1:
-        print(f"you have selected 1")
-    case 2:
-        print(f"you have selected 2")
-    case 3:
-        print(f"you have selected 3")
-    case 4:
-        print(f"you have selected 4")
-    case 5:
-        print(f"you have selected 5")
-    case _:
-        print("You didnt select any number from 1 to 5")
+# choice = int(input("Enter number from 1 to 5:"))
+# match choice:
+#     case 1:
+#         print(f"you have selected 1")
+#     case 2:
+#         print(f"you have selected 2")
+#     case 3:
+#         print(f"you have selected 3")
+#     case 4:
+#         print(f"you have selected 4")
+#     case 5:
+#         print(f"you have selected 5")
+#     case _:
+#         print("You didnt select any number from 1 to 5")
 
-# WAP to find the factorial of a given number
-num = int(input("Enter a number: ")); fact = 1
-for i in range(1, num+1):   fact = fact*i
-print(f"The factorial of {num} is {fact}")
+# # WAP to find the factorial of a given number
+# num = int(input("Enter a number: ")); fact = 1
+# for i in range(1, num+1):   fact = fact*i
+# print(f"The factorial of {num} is {fact}")
+
+# # wap to print n term of fibonacci series
+# num = int(input("Enter a number: "))
+# a = 0; b = 1
+# for i in range(num):
+#     print(a, end=" ")
+#     a, b = b, a+b
+
+
+
+# WAP to generate a qr code
+import qrcode as qr
+from PIL import Image
+import os
+data = input("Enter the data: ")
+img = qr.make(data)
+img.save("qrcode.png")
+img = Image.open('qrcode.png')
+img.show()
+os.remove("qrcode.png")
