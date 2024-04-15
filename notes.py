@@ -1,4 +1,4 @@
-from multiprocessing.managers import ListProxy
+from ast import Dict
 import string
 import datetime
 import time
@@ -127,8 +127,8 @@ import time
 # #WAP to find wheater the given number is prime or not
 # num = int(input("Enter a number: "))
 # if num > 1:
-#     for i in range(2, int(num**0.5) + 1):
-#         if num % i == 0:
+    # for i in range(2, int(num**0.5) + 1):
+    #     if num % i == 0:
 #             print(f"{num} is not a prime number")
 #             break
 #     else:
@@ -238,14 +238,83 @@ import time
 #     a, b = b, a+b
 
 
+# # WAP to generate a qr code
+# import qrcode as qr
+# from PIL import Image
+# import os
+# data = input("Enter the data: ")
+# img = qr.make(data)
+# img.save("qrcode.png")
+# img = Image.open('qrcode.png')
+# img.show()
+# os.remove("qrcode.png")
 
-# WAP to generate a qr code
-import qrcode as qr
-from PIL import Image
-import os
-data = input("Enter the data: ")
-img = qr.make(data)
-img.save("qrcode.png")
-img = Image.open('qrcode.png')
-img.show()
-os.remove("qrcode.png")
+
+
+###   15/04/2024   ###
+# S = {3,2,1,4,5,5,6,7,8,9,10}
+# type(S)
+# sorted(S)
+
+# S1 = {1,2,3,4,5}
+# S2 = {4,5,6,7,8}
+# S1.union(S2) # returns a new set
+# S1.update(S2) # changes the original set
+
+# S1.intersection(S2)
+# S1.intersection_update(S2)
+
+# S1.difference(S2)
+# S2.difference(S1)
+# S1.difference_update(S2)
+
+# S1.symmetric_difference(S2)
+# S1.symmetric_difference_update(S2)
+
+# S1.isdisjoint(S2) # returns True if no common element
+
+# S1
+# S2
+
+
+# S3 = {1,2,3,4,5,6,7,8,9,10}
+# S4 = {1,2,3,4,5}
+# S3.issuperset(S4)
+# S4.issubset(S3)
+# S3
+# S4
+
+# S5 = {11,12,13,14,15}
+# S5.add(16)
+# S5.remove(16) # throws an error if element not present
+# S5.discard(16) # does not throw an error if element not present
+# S5.discard(15)
+# S5.pop() # removes a random element
+# S5
+
+# S6 = {11,12,13,14,15,16,17,18,19,20}
+# S6.clear()
+# del S6
+# S6
+
+# Sx = {}
+# type(Sx)
+# Sx = set()
+# type(Sx)
+
+# Dict = {'Akash': 20, 'Rahul': 19, 'Karan': 12, 'Rohit': 14}
+# Dict
+# Dict.keys()
+# Dict.values()
+# Dict.items()
+
+# Dict['Akash']
+# Dict.get('Rahul')
+# Dict['Osho']
+# Dict.get('Osho')
+
+# for i in Dict.keys():
+#     print(i, end=" ")
+
+# for i in Dict.values():
+    # print(i, end=" ")
